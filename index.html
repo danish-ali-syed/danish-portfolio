@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danish — Web Developer</title>
+  <meta name="description" content="Portfolio of Danish, a web developer crafting fast, beautiful experiences for the web." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">danish<span>.dev</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-small">Hire me</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <p class="hero-eyebrow reveal">👋 Hello, I'm</p>
+      <h1 class="hero-title reveal">Danish</h1>
+      <h2 class="hero-subtitle reveal">I'm a <span class="typed" id="typed"></span><span class="caret">|</span></h2>
+      <p class="hero-text reveal">
+        I build fast, responsive and delightful experiences for the web —
+        from pixel-perfect landing pages to full-stack applications.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span>+</span><p>Years experience</p></div>
+        <div class="stat"><span class="stat-num" data-count="25">0</span><span>+</span><p>Projects shipped</p></div>
+        <div class="stat"><span class="stat-num" data-count="12">0</span><span>+</span><p>Happy clients</p></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal">About me</p>
+      <h2 class="section-title reveal">Turning ideas into <em>interactive</em> reality</h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-avatar">D</div>
+          <h3>Danish</h3>
+          <p class="about-role">Web Developer</p>
+          <p class="about-bio">
+            <!-- PLACEHOLDER: replace with your own bio -->
+            I'm a web developer based in [Your City] with a passion for clean code
+            and beautiful interfaces. I specialise in modern JavaScript, responsive
+            design and turning complex problems into simple, elegant solutions.
+          </p>
+          <div class="about-tags">
+            <span>🌍 [Your City]</span>
+            <span>💼 Open to work</span>
+          </div>
+        </div>
+        <div class="about-points">
+          <div class="point reveal">
+            <div class="point-icon">⚡</div>
+            <div><h4>Performance obsessed</h4><p>Every millisecond counts. I ship lean, optimised sites that load instantly.</p></div>
+          </div>
+          <div class="point reveal">
+            <div class="point-icon">🎨</div>
+            <div><h4>Design-minded</h4><p>I sweat the details — spacing, typography and motion that feel just right.</p></div>
+          </div>
+          <div class="point reveal">
+            <div class="point-icon">🧩</div>
+            <div><h4>Problem solver</h4><p>From tricky bugs to architecture decisions, I enjoy figuring things out.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal">Skills</p>
+      <h2 class="section-title reveal">My <em>toolbox</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">🟧</span><h4>HTML & CSS</h4></div>
+          <div class="bar"><span style="--w:95%"></span></div>
+          <p>Semantic markup, Flexbox, Grid, animations</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">🟨</span><h4>JavaScript</h4></div>
+          <div class="bar"><span style="--w:90%"></span></div>
+          <p>ES6+, DOM, fetch API, async patterns</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">⚛️</span><h4>React</h4></div>
+          <div class="bar"><span style="--w:85%"></span></div>
+          <p>Hooks, state management, component design</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">🟩</span><h4>Node.js</h4></div>
+          <div class="bar"><span style="--w:78%"></span></div>
+          <p>REST APIs, Express, authentication</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">🎨</span><h4>UI / UX</h4></div>
+          <div class="bar"><span style="--w:82%"></span></div>
+          <p>Figma, responsive design, accessibility</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">🛠️</span><h4>Tools</h4></div>
+          <div class="bar"><span style="--w:88%"></span></div>
+          <p>Git, GitHub, VS Code, Vite, npm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal">Projects</p>
+      <h2 class="section-title reveal">Selected <em>work</em></h2>
+      <p class="section-sub reveal">A few things I've built. Replace these placeholders with your real projects.</p>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-1"><span>🚀</span></div>
+          <div class="project-body">
+            <h4>Project One</h4>
+            <p>A short placeholder description. What it does, who it's for, and what makes it interesting.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links"><a href="#">Live demo →</a><a href="#">Code →</a></div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-2"><span>💡</span></div>
+          <div class="project-body">
+            <h4>Project Two</h4>
+            <p>A short placeholder description. What it does, who it's for, and what makes it interesting.</p>
+            <div class="project-tags"><span>React</span><span>Node.js</span></div>
+            <div class="project-links"><a href="#">Live demo →</a><a href="#">Code →</a></div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-3"><span>✨</span></div>
+          <div class="project-body">
+            <h4>Project Three</h4>
+            <p>A short placeholder description. What it does, who it's for, and what makes it interesting.</p>
+            <div class="project-tags"><span>JavaScript</span><span>API</span></div>
+            <div class="project-links"><a href="#">Live demo →</a><a href="#">Code →</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <p class="section-eyebrow">Contact</p>
+        <h2>Let's build something <em>great</em> together</h2>
+        <p>Have a project in mind, or just want to say hi? My inbox is always open.</p>
+        <div class="contact-actions">
+          <a href="mailto:hello@example.com" class="btn btn-primary">hello@example.com</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/danish-ali-syed" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </div>
+        <p class="contact-note">↑ Replace with your real email & social links</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Danish · Built with HTML, CSS & JS · <a href="#home">Back to top ↑</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
